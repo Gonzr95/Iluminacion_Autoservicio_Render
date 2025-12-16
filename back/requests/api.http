@@ -1,0 +1,67 @@
+### RECUPERAR users
+GET http://localhost:3000/administrator
+
+### Crear administrador
+
+POST http://localhost:3000/administrator/register
+Content-Type: application/json
+
+{
+  "user": "gonza@admin.com",
+  "pass": "Inicio1234."
+}
+
+### login administrador falta pass deberia devolver error
+
+POST http://localhost:3000/administrator
+Content-Type: application/json
+
+{ 
+  "mail": "gonza@admin.com"
+}
+
+### login administrador credenciales invalidas
+
+POST http://localhost:3000/administrator
+Content-Type: application/json
+
+{
+  "mail": "gonza@admin.com",
+  "pass": "Inicio123"
+}
+
+### login administrador credenciales correctas
+
+POST http://localhost:3000/administrator
+Content-Type: application/json
+
+{
+  "mail": "gonza@admin.com",
+  "pass": "Inicio1234."
+}
+
+
+### creacion de un producto
+
+POST http://localhost:3000/producto
+Content-Type: application/json
+
+{
+  "nombre": "Plafon estilo Sovietico",
+  "precio": 15000,
+  "imagen": "Una URL",
+  "categoria": "Plafon",
+  "activo": false
+}
+
+### RECUPERAR productos
+GET http://localhost:3000/producto
+
+### RECUPERAR producto id
+GET http://localhost:3000/producto/2
+
+### RECUPERAR UN JUEGO POR ID (deberia devolver TF clasic)
+GET http://localhost:1234/juegos/68c1a4e2806505497525fbe5
+
+### RECUPERAR TODOS LOS JUEGOS POR GENERO
+GET http://localhost:1234/juegos?genero=FPS

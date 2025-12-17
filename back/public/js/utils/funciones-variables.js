@@ -1,5 +1,5 @@
-const frontUrl = "http://localhost:5501"; // Según el puerto de Live Server
-const apiUrl = "http://localhost:3000"; // Según el puerto de Express
+const frontUrl = "https://iluminacion-autoservicio-render.onrender.com"; // Según el puerto de Live Server
+const apiUrl = "https://iluminacion-autoservicio-renderback.onrender.com"; // Según el puerto de Express
 const categoriaA = 'Farol';
 const categoriaB = 'Plafon';
 const response = await fetch(apiUrl + '/producto/all');

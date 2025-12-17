@@ -12,7 +12,7 @@ app.disable('x-powered-by');
 app.use(express.json());
 app.use(
   cors({
-    origin: 'https://iluminacion-autoservicio-renderback.onrender.com',
+    origin: 'https://iluminacion-autoservicio-render.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })

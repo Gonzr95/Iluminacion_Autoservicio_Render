@@ -1,4 +1,4 @@
-import sequelize from '../db/sequelize.js';
+import {sequelize} from '../db/sequelize.js';
 import { DataTypes } from 'sequelize';
 
 const Venta = sequelize.define("Venta",

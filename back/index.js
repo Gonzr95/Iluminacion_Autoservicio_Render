@@ -5,6 +5,7 @@ const port = 3000;
 import administradorRouter from './routes/administrador.routes.js';
 import productoRouter from './routes/producto.routes.js'
 import ventaRouter from './routes/venta.routes.js';
+import { connectDB } from './db/sequelize.js';
 connectDB();
 
 app.disable('x-powered-by');

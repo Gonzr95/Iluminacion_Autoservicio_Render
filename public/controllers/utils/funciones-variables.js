@@ -1,6 +1,7 @@
 import { Pagination } from "./pagination.js";
 // ------------------------------ Variables ------------------------------
-const apiUrl = 'http://localhost:3000';
+//const apiUrl = 'http://localhost:3000';   OLD
+const apiUrl = "https://iluminacion-autoservicio-renderback.onrender.com"
 const nombreEmpresa = 'Gonzalo Iluminación';
 const sectionProductos = document.getElementById("section-productos");
 const divProducts = document.getElementById('products');
@@ -45,7 +46,7 @@ async function irALogin() {
 
 const page = Pagination({
   limit: 10,
-  baseURL: "http://localhost:3000/producto",
+  baseURL: "https://iluminacion-autoservicio-renderback.onrender.com/producto",
   containerId: "products",
 
   // cómo dibujar un producto

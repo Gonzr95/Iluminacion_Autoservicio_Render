@@ -1,4 +1,4 @@
-import Administrador from '../models/administrador.js';
+import { Administrador } from '../models/administrador.js';
 import { comparePassword } from '../utils/bcrypt.js';
 
 async function validarRegistro(req, res, next) {

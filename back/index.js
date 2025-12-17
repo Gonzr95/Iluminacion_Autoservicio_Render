@@ -12,13 +12,9 @@ app.disable('x-powered-by');
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      'http://localhost:5500',
-      'http://127.0.0.1:5500',
-      'http://localhost:5501',
-      'http://127.0.0.1:5501',
-      'https://cotti-rodriguez-tp-programacion-iii-2025.onrender.com',
-    ],
+    origin: 'https://iluminacion-autoservicio-renderback.onrender.com',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
   })
 );
 app.use('/public', express.static('public'));

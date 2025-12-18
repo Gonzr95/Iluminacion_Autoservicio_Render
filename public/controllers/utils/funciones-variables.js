@@ -59,7 +59,7 @@ const page = Pagination({
     div.id = `div-producto-${p.id}`;
     div.classList.add('product');
     div.innerHTML = `
-      <img src="http://localhost:3000/uploads/${p.imagen}">
+      <img src="${p.imagen}">
       <p class="product-name">${p.nombre}</p>
       <p class="product-price">$${p.precio}</p>
       <p class="cuotas-p">6 cuotas sin interés de $${(p.precio / 6).toFixed(2)}</p>

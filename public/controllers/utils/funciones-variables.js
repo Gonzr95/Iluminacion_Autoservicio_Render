@@ -1,6 +1,8 @@
 import { Pagination } from "./pagination.js";
 // ------------------------------ Variables ------------------------------
-//const apiUrl = 'http://localhost:3000';   OLD
+
+
+
 const apiUrl = "https://iluminacion-autoservicio-renderback.onrender.com"
 const nombreEmpresa = 'Gonzalo Iluminación';
 const sectionProductos = document.getElementById("section-productos");
@@ -182,7 +184,7 @@ function crearCardCarrito(producto) {
   div.id = `div-producto-${producto.id}`;
   div.classList.add('product');
   div.innerHTML = `
-  <img src="${apiUrl}/uploads/${producto.imagen}">
+  <img src="${producto.imagen}">
   <p class="product-name">${producto.nombre}</p>
   <p class="product-price">$${producto.precio}</p>
   <p class="cuotas-p">6 cuotas sin interés de $${(producto.precio / 6).toFixed(2)}</p>
@@ -270,7 +272,7 @@ function crearCard(producto) {
   const div = document.createElement("div");
   div.id = `div-producto-${producto.id}`;
   div.innerHTML = `
-  <img src="${apiUrl}/uploads/${producto.imagen}">
+  <img src="${producto.imagen}">
   <p>Producto Nº: ${producto.id}</p>
   <p>Nombre: ${producto.nombre}</p>
   <p>Precio: ${producto.precio}</p>

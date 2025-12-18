@@ -10,7 +10,7 @@ btnTema.onclick = cambiarTema;
 
 btnSalir.onclick = () => {
   localStorage.clear();
-  location.assign(frontUrl + '/front/views/bienvenida.html');
+  location.assign(frontUrl);
 };
 
 btnAccesoRapido.addEventListener("click", () => {

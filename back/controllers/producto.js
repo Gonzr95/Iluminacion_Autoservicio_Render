@@ -3,7 +3,7 @@ import { Producto } from '../models/relaciones.js';
 async function crear(req, res) {
   try{
     const { nombre, precio, categoria } = req.body;
-    const imagen = req.file.filename;
+    const imagen = req.file.path;
     const resultado = await Producto.create({
       nombre: nombre,
       precio: precio,

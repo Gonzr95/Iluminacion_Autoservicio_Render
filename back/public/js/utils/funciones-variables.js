@@ -151,7 +151,7 @@ function crearCard(producto) {
   <td class="id">${producto.id}</td>
   <td>${producto.nombre}</td>
   <td>${producto.precio}</td>
-  <td><img src="../uploads/${producto.imagen}" alt="producto ${producto.id}" width="100"></td>
+  <td><img src="${producto.imagen}" alt="producto ${producto.id}" width="100"></td>
   <td>${producto.categoria}</td>
   <td id="activo-${producto.id}">${producto.activo ? 'Activo' : 'Inactivo'}</td>
   <td><button class="modificar" id="btn-modificar-${producto.id}">Modificar</button></td>
